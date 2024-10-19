@@ -29,7 +29,7 @@ export const appConfig: ApplicationConfig = {
       }
       ,
       httpInterceptor: {
-        allowedList: ['http://127.0.0.1:8069/ceva']
+        allowedList: [`${environment.apiUrl}/ceva`]
       }
     }),
   ]
