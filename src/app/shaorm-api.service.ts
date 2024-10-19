@@ -19,7 +19,7 @@ export class ShaormAPIService {
     // })    
   }
 
-  goGetSomething(path): void {
+  goGetSomething(path: string): void {
     this.http.get(`${this.url}/${path}`).subscribe({
       
       next: (v) => console.log(v),
