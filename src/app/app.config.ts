@@ -29,7 +29,7 @@ export const appConfig: ApplicationConfig = {
       }
       ,
       httpInterceptor: {
-        allowedList: [`${environment.apiUrl}/ceva`]
+        allowedList: [`${environment.apiUrl}/*`]
       }
     }),
   ]
