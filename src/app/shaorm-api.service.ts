@@ -19,16 +19,8 @@ export class ShaormAPIService {
     // })    
   }
 
-  goGetSomething(): void {
-    // const httpOptions = {
-    //   headers: new HttpHeaders({
-    //     'authorization': `Bearer ${this.token}`
-    //   })
-    // };
-
-
-
-    this.http.get(`${this.url}/ceva`).subscribe({
+  goGetSomething(path): void {
+    this.http.get(`${this.url}/${path}`).subscribe({
       
       next: (v) => console.log(v),
       error: (e) => console.error(e),

@@ -20,8 +20,8 @@ export class AppComponent {
     public shaormapi: ShaormAPIService,
   ) { }
 
-  getSomething() {
-    this.shaormapi.goGetSomething()
+  getSomething(path:string) {
+    this.shaormapi.goGetSomething(path)
   }
 
   ngOnInit() {

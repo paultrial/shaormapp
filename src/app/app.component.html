@@ -7,6 +7,7 @@
 </div>`
 
 
-<button (click)="getSomething()">du-te ia ceva</button>
+<button (click)="getSomething('ceva')">du-te ia ceva</button>
+<button (click)="getSomething('altceva')">du-te ia altceva</button>
 
 <h1 *ngIf="auth.isLoading$ | async">LOADING...</h1>
