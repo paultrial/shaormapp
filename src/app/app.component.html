@@ -1,0 +1,12 @@
+<app-auth-button></app-auth-button>
+
+<div *ngIf="auth.user$ | async as user">
+    {{user | json}}
+    <p>{{user.nickname}}</p>
+    <img [src]="user.picture" alt="">
+</div>`
+
+
+<button (click)="getSomething()">du-te ia ceva</button>
+
+<h1 *ngIf="auth.isLoading$ | async">LOADING FRAERE!!!</h1>
