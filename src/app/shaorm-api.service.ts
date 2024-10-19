@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AuthService } from '@auth0/auth0-angular';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShaormAPIService {
-  private url = "http://127.0.0.1:8069";
+  private url = environment.apiUrl;
   token = undefined;
 
   constructor(
